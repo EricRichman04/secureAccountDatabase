@@ -1,4 +1,4 @@
-import bcrypt, tkinter as tk, sqlite3, base64
+import bcrypt, tkinter as tk, sqlite3
 from tkinter import messagebox
 #Connecting/Creating the sqlite database 
 con = sqlite3.connect("accounts.db")
@@ -106,9 +106,6 @@ login_button.pack(side="left", padx=5)
 
 register_button = tk.Button(button_frame, text="Register", width=10, command=register)
 register_button.pack(side="right", padx=5)
-
-print_button = tk.Button(button_frame, text="Print DB", width = 10, command=print)
-print_button.pack(side="right", padx=5)
 
 
 gui.mainloop()
